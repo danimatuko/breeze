@@ -48,16 +48,6 @@ $border-radius-sm: $border-radius-base * 0.75;
 $border-radius-md: $border-radius-base;
 $border-radius-lg: $border-radius-base * 1.25;
 
-@debug map-get($colors, 'info');
-@debug map-has-key($map: $colors, $key: 'info');
-@debug map-remove($colors, 'info');
-@debug map-merge(
-  $colors,
-  (
-    'pink': pink,
-  )
-);
-
 h1 {
   color: $primary;
 }
