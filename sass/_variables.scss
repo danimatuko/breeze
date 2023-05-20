@@ -29,9 +29,9 @@ $colors: (
   'light': $light,
 );
 
-$base-padding: 1rem;
-$base-border: 1px solid #ccc;
-$base-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$padding-base: 1rem;
+$border-base: 1px solid #ccc;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 $font-size-base: 1rem;
 
 //typography
@@ -42,10 +42,16 @@ $font-size-sm: $font-size-base * 0.875;
 $font-size-md: $font-size-base * 1.25;
 $font-size-lg: $font-size-base * 1.5;
 
+// Border Variables
+$border-base: 1px;
+$border-sm: $border-base * 0.75;
+$border-md: $border-base * 2;
+$border-lg: $border-base * 3;
+
 // Border Radius Variables
 $border-radius-base: 20px;
 $border-radius-sm: $border-radius-base * 0.75;
-$border-radius-md: $border-radius-base;
+$border-radius-md: $border-radius-base * 1;
 $border-radius-lg: $border-radius-base * 1.25;
 
 h1 {

@@ -1,16 +1,24 @@
+/**
+ * File: _card.scss
+ * Author: Dani Matuko
+ * Created: May 20, 2023
+ *
+ * Description: This Sass partial contains the main styles for the card component.
+ */
+
 @use 'sass:math';
 
 .card {
   display: block;
-  padding: $base-padding;
-  border: $base-border;
-  box-shadow: $base-box-shadow;
-  padding: $base-padding;
+  padding: $padding-base;
+  border: $border-base;
+  box-shadow: $box-shadow;
+  padding: $padding-base;
   border-radius: math.div($border-radius-base, 4);
 
   .card-title {
     font-size: $font-size-lg;
-    padding-bottom: $base-padding;
+    padding-bottom: $padding-base;
     font-weight: bold;
   }
 
