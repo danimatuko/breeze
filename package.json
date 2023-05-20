@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/danimatuko/breeze/issues"
   },
-  "homepage": "https://github.com/danimatuko/breeze#readme"
+  "homepage": "https://github.com/danimatuko/breeze#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
 }
