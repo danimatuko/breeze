@@ -1,0 +1,38 @@
+// Color Classes
+@each $key, $val in $colors {
+  // Text Color
+  .text-#{$key} {
+    color: #{$val};
+  }
+
+  // Background Color
+  .bg-#{$key} {
+    background-color: #{$val};
+  }
+
+  // Lighten Shades
+  @for $i from 1 through 9 {
+    // Text Color
+    .text-#{$key}-lighten-#{$i} {
+      color: mix(white, $val, $i * 10);
+    }
+
+    // Background Color
+    .bg-#{$key}-lighten-#{$i} {
+      background-color: mix(white, $val, $i * 10);
+    }
+  }
+
+  // Darken Shades
+  @for $i from 1 through 9 {
+    // Text Color
+    .text-#{$key}-darken-#{$i} {
+      color: mix(black, $val, $i * 10);
+    }
+
+    // Background Color
+    .bg-#{$key}-darken-#{$i} {
+      background-color: mix(black, $val, $i * 10);
+    }
+  }
+}

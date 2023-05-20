@@ -1,17 +1,62 @@
 /* Variabls */
 $primary: #007bff;
 $secondary: #6c757d;
-$success: #28a745;
-$danger: #dc3545;
-$warning: #ffc107;
+$error: #dc3545;
 $info: #17a2b8;
-$light: #f8f9fa;
+$blue: #0000ff;
+$red: #ff0000;
+$green: #00ff00;
+$yellow: #ffff00;
+$purple: #6f42c1;
+$orange: #ff7f00;
+$gray: #adb5bd;
 $dark: #343a40;
+$light: #f8f9fa;
+
+$colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'error': $error,
+  'info': $info,
+  'blue': $blue,
+  'red': $red,
+  'green': $green,
+  'yellow': $yellow,
+  'purple': $purple,
+  'orange': $orange,
+  'gray': $gray,
+  'dark': $dark,
+  'light': $light,
+);
 
 $base-padding: 1rem;
 $base-border: 1px solid #ccc;
 $base-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-$base-font-size: 1rem;
+$font-size-base: 1rem;
+
+//typography
+
+// Font Size Variables
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-md: $font-size-base * 1.25;
+$font-size-lg: $font-size-base * 1.5;
+
+// Border Radius Variables
+$border-radius-base: 20px;
+$border-radius-sm: $border-radius-base * 0.75;
+$border-radius-md: $border-radius-base;
+$border-radius-lg: $border-radius-base * 1.25;
+
+@debug map-get($colors, 'info');
+@debug map-has-key($map: $colors, $key: 'info');
+@debug map-remove($colors, 'info');
+@debug map-merge(
+  $colors,
+  (
+    'pink': pink,
+  )
+);
 
 h1 {
   color: $primary;
