@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/danimatuko/breeze#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.62.1"
   }
