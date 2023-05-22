@@ -1,0 +1,11 @@
+/**
+ * Calculates the light complement of a given color.
+ *
+ * @param {Color} $color - The input color.
+ * @return {Color} - The light complement of the input color.
+ */
+@function light-comp($color) {
+  $complement: complement($color);
+  $light-complement: lighten($complement, 30%);
+  @return $light-complement;
+}
