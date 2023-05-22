@@ -14,21 +14,22 @@ $dark: #343a40;
 $light: #f8f9fa;
 
 $colors: (
-  'primary': $primary,
-  'secondary': $secondary,
-  'error': $error,
-  'info': $info,
-  'blue': $blue,
-  'red': $red,
-  'green': $green,
-  'yellow': $yellow,
-  'purple': $purple,
-  'orange': $orange,
-  'gray': $gray,
-  'dark': $dark,
-  'light': $light,
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "blue": $blue,
+  "red": $red,
+  "green": $green,
+  "yellow": $yellow,
+  "purple": $purple,
+  "orange": $orange,
+  "gray": $gray,
+  "dark": $dark,
+  "light": $light,
 );
 
+$margin-base: 1rem;
 $padding-base: 1rem;
 $border-base: 1px solid #ccc;
 $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
