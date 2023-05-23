@@ -1,0 +1,119 @@
+/**
+ * File: _grid.scss
+ * Author: Dani Matuko
+ * Created: May 23, 2023
+ *
+ * Description: This Sass partial defines a grid system for creating responsive layouts.
+ * It includes mixins for setting up grid containers and grid items.
+ */
+
+@use "sass:math";
+
+$grid-columns: 12;
+
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+  "4": 40px,
+  "5": 50px,
+);
+
+$layout-values: flex-start, flex-end, center, space-between, space-around;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * {
+    padding: $val;
+  }
+  // remove padding from the edges
+  .gap-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+  }
+}
+
+@each $val in $layout-values {
+  .justify-#{$val} {
+    justify-content: $val;
+  }
+}
+
+@include breakpoint("xs") {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xs {
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+@include breakpoint("sm") {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-sm {
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+@include breakpoint("md") {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-md {
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+@include breakpoint("lg") {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-lg {
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+@include breakpoint("xl") {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xl {
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+
+/**
+ * Grid Container
+ *
+ * Creates a grid container with the specified grid properties.
+ *
+ * @param {number} $columns - The number of columns in the grid.
+ * @param {string} $gap - The gap between grid items.
+ */
+@mixin grid-container($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+/**
+   * Grid Item
+   *
+   * Sets the grid properties for a grid item.
+   *
+   * @param {number} $start - The starting column position of the grid item.
+   * @param {number} $end - The ending column position of the grid item.
+   */
+@mixin grid-item($start, $end) {
+  grid-column: $start / $end;
+}
