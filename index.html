@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    />
     <link rel="stylesheet" href="/dist/css/index.css" />
     <title>Breeze</title>
   </head>
+
   <body>
     <nav class="nav-primary text-white mb-4">
       <div class="container">
-        <span class="site-title">Site Title</span>
+        <span class="site-title">Breeze</span>
 
         <ul>
           <li><a href="#">Home</a></li>
@@ -23,14 +28,28 @@
     <div class="container">
       <!-- Headings -->
       <div class="mb-3">
+        <h1 class="mb-2 font-xxl">Typography</h1>
         <h2 class="mb-2">Headings</h2>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
+        <div>
+          <h1>This is a very large heading.</h1>
+          <h2>This is a large heading.</h2>
+          <h3>This is a medium heading.</h3>
+          <h4>This is a moderate heading.</h4>
+          <h5>This is a small heading.</h5>
+          <h6>This is a tiny heading.</h6>
+        </div>
       </div>
+
+      <pre>
+      <code  class="">
+        &lt;h1&gt; This is a very large heading.&lt;/h1&gt; 
+        &lt;h2&gt; This is a large heading.&lt;/h2&gt; 
+        &lt;h3&gt; This is a medium heading.&lt;/h3&gt; 
+        &lt;h4&gt; This is a moderate heading.&lt;/h4&gt; 
+        &lt;h5&gt; This is a small heading.&lt;/h5&gt; 
+        &lt;h6&gt; This is a tiny heading.&lt;/h6&gt;
+        </code>
+      </pre>
 
       <!-- colors -->
       <div class="mb-3">
@@ -157,5 +176,11 @@
 
       <!-- utilities -->
     </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
