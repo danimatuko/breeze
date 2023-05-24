@@ -4,14 +4,7 @@
 * Website: https://github.com/danimatuko
 */
 /* Variabls */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-h1 {
-  color: #007bff;
-}
-
-h2 {
-  color: #6c757d;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 /* import Roboto from goole fonts */
 /* Reset CSS */
@@ -55,7 +48,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 /* Reset anchor styles */

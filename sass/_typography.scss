@@ -1,0 +1,19 @@
+/**
+ * File: _typography.scss
+ * Author: Dani Matuko
+ * Created: May 24, 2023
+ *
+ * Description: This Sass partial defines common typography styles such as font families, font sizes,
+ * font weights, line heights, text colors, and text transformations. It also includes mixins for applying
+ * typography styles and provides default styles for headings (h1-h6) and paragraphs (p).
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
