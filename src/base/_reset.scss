@@ -1,0 +1,40 @@
+// Box sizing
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Reset margins and paddings
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+// Remove list styles
+ol,
+ul {
+  list-style: none;
+}
+
+// Remove anchor styles
+a {
+  text-decoration: none;
+}
+
+// Additional reset styles...

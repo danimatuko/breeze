@@ -1,21 +1,20 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
-const purgecss = require("gulp-purgecss");
+
+const config = {
+  src: "src/**/*.scss",
+  dest: "dist/css",
+};
 
 function compileSass() {
   return gulp
-    .src("sass/**/*.scss")
+    .src(config.src)
     .pipe(sass().on("error", sass.logError))
-    .pipe(
-      purgecss({
-        content: ["*.html"],
-      })
-    )
-    .pipe(gulp.dest("dist/css"));
+    .pipe(gulp.dest(config.dest));
 }
 
-function watchSass() {
-  gulp.watch(["sass/**/*.scss", "*.html"], compileSass);
+function watchFiles() {
+  gulp.watch(config.src, compileSass);
 }
 
-exports.default = gulp.series(compileSass, watchSass);
+exports.default = gulp.series(compileSass, watchFiles);
