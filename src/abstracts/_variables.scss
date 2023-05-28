@@ -1,6 +1,6 @@
 /* Variabls */
 $primary: #00d1b2; // Turquoise
-$secondary: #a6a6a6; // Gray
+$secondary: complementary($primary);
 $link: #3273dc; // Dodger blue
 $info: #209cee; // Sky blue
 $success: #23d160; // Emerald green
@@ -39,4 +39,3 @@ $border-radius-base: 20px;
 $border-radius-sm: $border-radius-base * 0.75;
 $border-radius-md: $border-radius-base * 1;
 $border-radius-lg: $border-radius-base * 1.25;
-

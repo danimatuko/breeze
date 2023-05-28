@@ -1,0 +1,39 @@
+%btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background-color: $light;
+  //   color: $dark;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.btn {
+  @extend %btn;
+}
+
+$button-size: (
+  sm: 5px 10px,
+  md: 10px 20px,
+  lg: 20px 40px,
+  xl: 30px 60px,
+  xxl: 40px 100px,
+);
+
+@each $size, $value in $button-size {
+  .btn-#{$size} {
+    padding: $value;
+  }
+}
+
+@each $color, $val in $colors {
+  .btn-#{$color} {
+    background-color: $val;
+  }
+}

@@ -73,6 +73,11 @@ $fonts: (
       bold: 700,
     ),
   ),
+
+  "color": (
+    "class": "text",
+    "values": $colors,
+  ),
 );
 
 @each $property, $map in $fonts {
