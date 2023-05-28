@@ -1,0 +1,43 @@
+/**
+ * File: _breakpoints.scss
+ * Author: Dani Matuko
+ * Created: May 22, 2023
+ *
+ * Description: This Sass partial defines a map of breakpoints for responsive design.
+ * It provides named breakpoints with corresponding CSS media query values.
+ */
+
+$breakpoints: (
+  "sm": $container-sm,
+  "md": $container-md,
+  "lg": $container-lg,
+  "xl": $container-xl,
+);
+
+/**
+     * Get Breakpoint Value
+     *
+     * Returns the CSS media query value for the specified breakpoint.
+     *
+     * @param {string} $breakpoint - The breakpoint name.
+     * @return {string} - The CSS media query value.
+     */
+@function get-breakpoint-value($breakpoint) {
+  @return map-get($breakpoints, $breakpoint);
+}
+
+/**
+     * Breakpoint Media Query
+     *
+     * Generates a CSS media query using the specified breakpoint.
+     *
+     * @param {string} $breakpoint - The breakpoint name.
+     * @return {string} - The CSS media query.
+     */
+@mixin breakpoint($breakpoint) {
+  $breakpoint-value: get-breakpoint-value($breakpoint);
+
+  @media (min-width: $breakpoint-value) {
+    @content;
+  }
+}

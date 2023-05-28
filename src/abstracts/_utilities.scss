@@ -1,0 +1,115 @@
+$utilities: (
+  "margin": (
+    "class": "m",
+    "values": (
+      1: $margin-base * 1,
+      2: $margin-base * 2,
+      3: $margin-base * 3,
+      4: $margin-base * 4,
+      5: $margin-base * 5,
+    ),
+  ),
+  "margin-left": (
+    "class": "ml",
+    "values": (
+      1: $margin-base * 1,
+      2: $margin-base * 2,
+      3: $margin-base * 3,
+      4: $margin-base * 4,
+      5: $margin-base * 5,
+    ),
+  ),
+  "margin-right": (
+    "class": "mr",
+    "values": (
+      1: $margin-base * 1,
+      2: $margin-base * 2,
+      3: $margin-base * 3,
+      4: $margin-base * 4,
+      5: $margin-base * 5,
+    ),
+  ),
+  "margin-top": (
+    "class": "mt",
+    "values": (
+      1: $margin-base * 1,
+      2: $margin-base * 2,
+      3: $margin-base * 3,
+      4: $margin-base * 4,
+      5: $margin-base * 5,
+    ),
+  ),
+
+  "margin-bottom": (
+    "class": "mb",
+    "values": (
+      1: $margin-base * 1,
+      2: $margin-base * 2,
+      3: $margin-base * 3,
+      4: $margin-base * 4,
+      5: $margin-base * 5,
+    ),
+  ),
+
+  "padding": (
+    "class": "p",
+    "values": (
+      1: $padding-base * 1,
+      2: $padding-base * 2,
+      3: $padding-base * 3,
+      4: $padding-base * 4,
+      5: $padding-base * 5,
+    ),
+  ),
+  "padding-left": (
+    "class": "pl",
+    "values": (
+      1: $padding-base * 1,
+      2: $padding-base * 2,
+      3: $padding-base * 3,
+      4: $padding-base * 4,
+      5: $padding-base * 5,
+    ),
+  ),
+  "padding-right": (
+    "class": "pr",
+    "values": (
+      1: $padding-base * 1,
+      2: $padding-base * 2,
+      3: $padding-base * 3,
+      4: $padding-base * 4,
+      5: $padding-base * 5,
+    ),
+  ),
+  "padding-top": (
+    "class": "pt",
+    "values": (
+      1: $padding-base * 1,
+      2: $padding-base * 2,
+      3: $padding-base * 3,
+      4: $padding-base * 4,
+      5: $padding-base * 5,
+    ),
+    "padding-bottom": (
+      "class": "pb",
+      "values": (
+        1: $padding-base * 1,
+        2: $padding-base * 2,
+        3: $padding-base * 3,
+        4: $padding-base * 4,
+        5: $padding-base * 5,
+      ),
+    ),
+  ),
+);
+
+@each $property, $map in $utilities {
+  $class: map-get($map, "class");
+  $values: map-get($map, "values");
+
+  @each $attr, $value in $values {
+    .#{$class}-#{$attr} {
+      #{$property}: $value;
+    }
+  }
+}

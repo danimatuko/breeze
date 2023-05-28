@@ -1,0 +1,61 @@
+// _mixins.scss
+
+// Box Shadow mixin
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Border Radius mixin
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// Flexbox mixin
+@mixin flexbox() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Transition mixin
+@mixin transition($property, $duration, $timing-function: ease) {
+  transition: $property $duration $timing-function;
+}
+
+// Media Query mixin
+@mixin media-query($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin container {
+  margin: auto;
+  max-width: 100%;
+  background-color: $dark;
+
+  @include breakpoint("sm") {
+    max-width: $container-sm;
+  }
+  @include breakpoint("md") {
+    max-width: $container-md;
+  }
+  @include breakpoint("lg") {
+    max-width: $container-lg;
+  }
+  @include breakpoint("xl") {
+    max-width: $container-xl;
+  }
+}
+
+.container {
+  @include container;
+}
+
+@each $breakpoint, $value in $breakpoints {
+  .container-#{$breakpoint} {
+    max-width: $value;
+    margin: auto;
+    background-color: $primary;
+  }
+}
