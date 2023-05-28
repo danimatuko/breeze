@@ -1,0 +1,50 @@
+// Define variables
+$grid-columns: 12;
+$grid-gap: 20px;
+
+// Mixin to generate grid classes
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+  grid-gap: $grid-gap;
+}
+
+// Mixin to generate column classes
+@mixin column($span) {
+  grid-column: span $span;
+}
+
+.grid {
+  @include grid;
+
+  .col {
+    grid-column: span 12;
+    background-color: $primary;
+  }
+
+  @include breakpoint("md") {
+    .col {
+      grid-column: span 6;
+      background-color: $primary;
+    }
+  }
+  @include breakpoint("lg") {
+    .col {
+      grid-column: span 4;
+      background-color: $primary;
+    }
+  }
+  @include breakpoint("xl") {
+    .col {
+      grid-column: span 3;
+      background-color: $primary;
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include column($i);
+    background-color: $primary;
+  }
+}

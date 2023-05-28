@@ -90,6 +90,14 @@ $fonts: (
     "class": "text",
     "values": $colors,
   ),
+  "text-align": (
+    "class": "text",
+    "values": (
+      "center": center,
+      "left": left,
+      "right": right,
+    ),
+  ),
 );
 
 @each $property, $map in $fonts {

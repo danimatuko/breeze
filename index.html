@@ -16,10 +16,96 @@
 
   <body>
     <div class="container">
+      <!-- Grid -->
+      <section class="mb-3">
+        <h1 class="mb-2 font-xxl">Layout</h1>
+        <h2 class="mb-1 font-bold">Grid</h2>
+        <p class="font-lg mb-2">
+          Breeze is using a standard 12 column fluid responsive grid system. The
+          grid helps you layout your page in an ordered, easy fashion. You can
+          also just specify columns and let the grid system determine what would
+          work best.
+        </p>
+        <h3 class="mb-2">Responsive grid</h3>
+        <div class="text-center">
+          <div class="grid">
+            <div class="col">Column 1</div>
+            <div class="col">Column 2</div>
+            <div class="col">Column 3</div>
+            <div class="col">Column 4</div>
+            <div class="col">Column 5</div>
+            <div class="col">Column 6</div>
+            <div class="col">Column 7</div>
+            <div class="col">Column 8</div>
+            <div class="col">Column 9</div>
+            <div class="col">Column 10</div>
+            <div class="col">Column 11</div>
+            <div class="col">Column 12</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <pre>
+            <code class="html">
+              &lt;div class="grid"&gt;
+                  &lt;div class="col"&gt;Column 1&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 2&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 3&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 4&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 5&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 6&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 7&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 8&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 9&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 10&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 11&lt;/div&gt;
+                  &lt;div class="col"&gt;Column 12&lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+        <div class="mb-3">
+          <h3 class="mb-2 mt-2">Responsive classes</h3>
+
+          <div class="grid">
+            <div class="col-12">col-12</div>
+            <div class="col-6">col-6</div>
+            <div class="col-6">col-6</div>
+            <div class="col-4">col-4</div>
+            <div class="col-4">col-4</div>
+            <div class="col-4">col-4</div>
+
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+          </div>
+          <pre>
+          <code class="html">
+        &lt;div class="grid"&gt;
+            &lt;div class="col-12"&gt;col-12&lt;/div&gt;
+            &lt;div class="col-6"&gt;col-6&lt;/div&gt;
+            &lt;div class="col-6"&gt;col-6&lt;/div&gt;
+            &lt;div class="col-4"&gt;col-4&lt;/div&gt;
+            &lt;div class="col-4"&gt;col-4&lt;/div&gt;
+            &lt;div class="col-4"&gt;col-4&lt;/div&gt;
+            &lt;div class="col-3"&gt;col-3&lt;/div&gt;
+            &lt;div class="col-3"&gt;col-3&lt;/div&gt;
+            &lt;div class="col-3"&gt;col-3&lt;/div&gt;
+            &lt;div class="col-3"&gt;col-3&lt;/div&gt;
+        &lt;/div&gt;
+          </code>
+        </pre>
+        </div>
+      </section>
       <!-- Headings -->
       <div class="mb-3">
         <h1 class="mb-2 font-xxl">Typography</h1>
-        <h2 class="mb-2 font-bold">Headings</h2>
+        <h2 class="mb-1 font-bold">Headings</h2>
+        <p class="font-lg mb-2">
+          Typography sets default styles for headings, paragraphs, semantic
+          text, etc. Breeze uses Roboto (provided by Google Fonts) as it's
+          default font with a base font size of 16px.
+        </p>
         <div>
           <h1>This is a very large heading.</h1>
           <h2>This is a large heading.</h2>
@@ -43,7 +129,10 @@
 
       <!-- font-size -->
       <div class="mb-3">
-        <h2 class="mb-2 font-bold">Font Size</h2>
+        <h2 class="mb-1 font-bold">Font Size</h2>
+        <p class="font-lg mb-2">
+          There are 3 font size options: small, medium and large.
+        </p>
         <p class="font-sm">this is small font</p>
         <p class="font-md">this is medium font</p>
         <p class="font-lg">this is large font</p>

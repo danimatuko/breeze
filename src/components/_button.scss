@@ -6,7 +6,6 @@
   border: 2px solid #333;
   border-radius: 4px;
   background-color: $light;
-  //   color: $dark;
   cursor: pointer;
   transition: background-color 0.3s ease;
   &:hover {
@@ -17,6 +16,7 @@
 .btn {
   @extend %btn;
 }
+
 $button-size: (
   sm: 0.3125rem 0.625rem,
   md: 0.625rem 1.25rem,
