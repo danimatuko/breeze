@@ -1,12 +1,17 @@
 @import "base/reset";
 @import "abstracts/functions";
 @import "abstracts/variables";
-@import "base/colors";
-@import "base/elements";
 @import "abstracts/breakpoints";
 @import "abstracts/mixins";
-@import "base/typography";
 @import "abstracts/utilities";
+
+@import "base/colors";
+@import "base/elements";
+@import "base/typography";
+
+@import "layout/grid";
+@import "layout/flex";
+
 @import "components/code";
 @import "components/button";
-@import "layout/grid";
+@import "components/form";

@@ -1,0 +1,46 @@
+// _form.scss (partial file)
+
+.form {
+  // Form control styles
+  .form-control {
+    margin-bottom: 10px;
+
+    label {
+      display: block;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+        border-color: #333;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  }
+
+  // // Form button styles
+  // button {
+  //   @extend %btn;
+  // }
+
+  // Form validation error styles
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+}

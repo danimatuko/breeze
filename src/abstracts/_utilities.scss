@@ -7,6 +7,8 @@ $utilities: (
       3: $margin-base * 3,
       4: $margin-base * 4,
       5: $margin-base * 5,
+      "auto": auto,
+      "none": 0,
     ),
   ),
   "margin-left": (
@@ -109,6 +111,63 @@ $utilities: (
 
   @each $attr, $value in $values {
     .#{$class}-#{$attr} {
+      #{$property}: $value;
+    }
+  }
+}
+
+$sizing: (
+  "width": (
+    "class": "w",
+    "values": (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+    ),
+  ),
+  "height": (
+    "class": "h",
+    "values": (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+    ),
+  ),
+);
+
+@each $property, $map in $sizing {
+  $class: map-get($map, "class");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    .#{$class}-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}
+
+$display: (
+  "display": (
+    "class": "d",
+    "values": (
+      "none": none,
+      "block": block,
+      "inline": inline,
+      "inline-block": inline-block,
+      "flex": flex,
+      "grid": grid,
+    ),
+  ),
+);
+
+@each $property, $map in $display {
+  $class: map-get($map, "class");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    .#{$class}-#{$key} {
       #{$property}: $value;
     }
   }

@@ -1,0 +1,36 @@
+$layout-values: flex-start, flex-end, center, space-between, space-around;
+
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+  "4": 40px,
+  "5": 50px,
+);
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 1;
+  }
+}
+
+@each $val in $layout-values {
+  .justify-#{$val} {
+    justify-content: $val;
+  }
+}
+
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * {
+    padding: $val;
+  }
+  // remove padding from the edges
+  .gap-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+  }
+}
