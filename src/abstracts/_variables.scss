@@ -1,40 +1,43 @@
 /* Variabls */
-$primary: #00d1b2; // Turquoise
-$secondary: complementary($primary);
-$info: #209cee;
-$success: #23d160;
-$warning: #ffdd57;
-$danger: #ff3860;
-$dark: #363636;
-$light: #f5f5f5;
 
-$margin-base: 10px;
-$padding-base: 10px;
-$border-base: 1px solid #ccc;
-$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-$box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.1);
-$font-size-base: 1rem;
+// colors
+$primary: #5f79f9 !default;
+$secondary: #c2c2c2 !default;
+$info: #4299E1 !default;
+$success: #23d160 !default;
+$warning: #f5c404 !default;
+$danger: #ff3860 !default;
+$dark: #363636 !default;
+$light: #f5f5f5 !default;
 
-// Container Variables(max-width)
-$container-sm: 640px;
-$container-md: 768px;
-$container-lg: 1024px;
-$container-xl: 1440px;
+// spacin
+$margin-base: 10px !default;
+$padding-base: 10px !default;
 
-// Font Size Variables
-$font-size-base: 1rem;
-$font-size-sm: 0.875rem;
-$font-size-md: 1.125rem;
-$font-size-lg: 1.25rem;
+// box shadow
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !default;
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.1) !default;
+$font-size-base: 1rem !default;
+// Container (max-width)
+$container-sm: 640px !default;
+$container-md: 768px !default;
+$container-lg: 1024px !default;
+$container-xl: 1440px !default;
 
-// Border Variables
-$border-base: 1px;
-$border-sm: $border-base * 0.75;
-$border-md: $border-base * 2;
-$border-lg: $border-base * 3;
+// Font Size
+$font-size-base: 1rem !default;
+$font-size-sm: 0.875rem !default;
+$font-size-md: 1.125rem !default;
+$font-size-lg: 1.25rem !default;
 
-// Border Radius Variables
-$border-radius-base: 20px;
-$border-radius-sm: $border-radius-base * 0.75;
-$border-radius-md: $border-radius-base * 1;
-$border-radius-lg: $border-radius-base * 1.25;
+// Border
+$border-base: 1px !default;
+$border-sm: $border-base * 0.75 !default;
+$border-md: $border-base * 2 !default;
+$border-lg: $border-base * 3 !default;
+
+// Border Radius
+$border-radius-base: 20px !default;
+$border-radius-sm: $border-radius-base * 0.75 !default;
+$border-radius-md: $border-radius-base * 1 !default;
+$border-radius-lg: $border-radius-base * 1.25 !default;
