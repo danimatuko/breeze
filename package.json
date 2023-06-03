@@ -1,6 +1,6 @@
 {
   "name": "smoojy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimalist CSS framework",
   "main": "dist/css/smoojy.css",
   "scripts": {
