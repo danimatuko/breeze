@@ -6,8 +6,12 @@ hr {
   margin-bottom: 1.5rem;
 }
 
-
-p{
+p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+a {
+  color: $info;
+  text-decoration: underline;
 }
