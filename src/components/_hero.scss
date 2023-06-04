@@ -1,0 +1,19 @@
+.hero {
+  @include flexbox;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+  &-title {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  &-description {
+    color: $dark;
+
+    font-weight: 400;
+    font-size: $font-size-lg;
+    margin-bottom: $margin-base * 2;
+  }
+}

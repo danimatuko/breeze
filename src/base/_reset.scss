@@ -8,6 +8,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 /* Reset CSS */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* Box sizing reset */
 *,
 *::before,
@@ -49,7 +55,7 @@ input,
 select,
 textarea {
   font-family: "Roboto", Arial, sans-serif;
-  color:#333;
+  color: #333;
 }
 
 /* Reset anchor styles */

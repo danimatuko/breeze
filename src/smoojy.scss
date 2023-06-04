@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import "base/reset";
 @import "abstracts/functions";
 @import "abstracts/variables";
@@ -16,3 +18,4 @@
 @import "components/button";
 @import "components/form";
 @import "components/list";
+@import "components/hero";

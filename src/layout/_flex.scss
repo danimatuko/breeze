@@ -22,6 +22,12 @@ $grid-gaps: (
   .justify-#{$val} {
     justify-content: $val;
   }
+
+  @each $val in $layout-values {
+    .items-#{$val} {
+      align-items: $val;
+    }
+  }
 }
 
 @each $key, $val in $grid-gaps {
