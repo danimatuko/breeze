@@ -11,10 +11,11 @@
 }
 
 // Flexbox mixin
-@mixin flexbox() {
+@mixin flexbox($justify: center) {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: $justify;
 }
 
 // Transition mixin

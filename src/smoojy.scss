@@ -1,6 +1,7 @@
 @use "sass:color";
 
 @import "base/reset";
+
 @import "abstracts/functions";
 @import "abstracts/variables";
 @import "abstracts/breakpoints";
@@ -19,3 +20,4 @@
 @import "components/form";
 @import "components/list";
 @import "components/hero";
+@import "components/nav";

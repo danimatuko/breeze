@@ -15,6 +15,15 @@
   </head>
 
   <body>
+    <nav class="nav">
+      <div class="nav-content">
+        <div class="nav-logo"><a href="/">Smoojy</a></div>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Github</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
     <section class="hero text">
       <div class="hero-content">
         <h1 class="hero-title font-lg">Smoojy</h1>
@@ -155,10 +164,87 @@
           &lt;p class="font-lg"&gt;this is large font&lt;/p&gt;
         </code>
        </pre>
-
-      <!-- buttons -->
+      <!-- Componenets -->
       <section class="mb-3">
         <h1 class="mb-2 font-xxl">Componenets</h1>
+        <!-- Nav -->
+        <section>
+          <h2 class="mb-2 font-bold">Nav</h2>
+          <div class="mb-2">
+            <p class="font-lg mb-2">
+              To get started quickly, here is what a complete basic navbar looks
+              like:
+            </p>
+            <div>
+              <nav class="nav">
+                <div class="nav-content">
+                  <div class="nav-logo"><a href="/">Logo</a></div>
+                  <ul class="nav-list">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <pre>
+      <code class="html">
+        &lt;nav class="nav"&gt;
+        &lt;div class="nav-content"&gt;
+          &lt;div class="nav-logo"&gt;&lt;a href="/"&gt;Logo&lt;/a&gt;&lt;/div&gt;
+          &lt;ul class="nav-list"&gt;
+            &lt;li class="nav-item"&gt;
+              &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+              &lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+              &lt;a class="nav-link" href="#"&gt;Services&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+              &lt;a class="nav-link" href="#"&gt;Contact&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+      </code>
+     </pre>
+          </div>
+          <div class="mb-2">
+            <h3 class="mb-2">Color</h3>
+            <p class="font-lg mb-2">The button comes in 7 different colors:</p>
+
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-dark text-light">Dark</button>
+          </div>
+          <pre>
+    <code class="html">
+      &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+      &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+      &lt;button class="btn btn-info"&gt;info&lt;/button&gt;
+      &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+      &lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+      &lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+      &lt;button class="btn btn-dark text-light"&gt;Dark&lt;/button&gt;
+    </code>
+   </pre>
+        </section>
+
         <h2 class="mb-2 font-bold">Buttons</h2>
         <div class="mb-2">
           <h3 class="mb-2">Size</h3>
@@ -318,7 +404,7 @@
         <div class="mb-5">
           <p>
             <strong class="mr-1">Margin:</strong
-            ><code class="bg-dark">m-{value} </code>, where
+            ><code>m-{value} </code>, where
             <code>{value}</code> ranges from 1 to 5. Controls the margin of
             elements.
           </p>

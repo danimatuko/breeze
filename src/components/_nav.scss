@@ -1,0 +1,45 @@
+$nav-background-color: $light !default;
+$nav-link-color: #fff;
+$nav-link-hover-color: #555;
+
+.nav {
+  background-color: $nav-background-color;
+
+  &-content {
+    @include container;
+    @include flexbox;
+    justify-content: space-between;
+    padding-inline: 1.2rem;
+  }
+
+  &-logo {
+    font-weight: bold;
+    font-size: $font-size-lg;
+
+    a {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .nav-item {
+      display: inline-block;
+
+      .nav-link {
+        display: block;
+        color: $dark;
+        text-decoration: none;
+        padding: 20px 5px;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
